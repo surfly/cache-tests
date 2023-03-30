@@ -34,13 +34,6 @@ export default [
     link: 'https://github.com/http-tests/cache-tests/wiki/Squid'
   },
   {
-    file: 'trafficserver.json',
-    name: 'ATS',
-    type: 'rev-proxy',
-    version: '8.1.1+ds-1.1',
-    link: 'https://github.com/http-tests/cache-tests/wiki/Traffic-Server'
-  },
-  {
     file: 'apache.json',
     name: 'httpd',
     type: 'rev-proxy',
@@ -69,10 +62,17 @@ export default [
     link: 'https://github.com/http-tests/cache-tests/wiki/Fastly'
   },
   {
+    file: 'trafficserver.json',
+    name: 'ATS',
+    type: 'rev-proxy',
+    version: '9.2.0-1',
+    link: 'https://github.com/http-tests/cache-tests/wiki/Traffic-Server'
+  },
+  {
     file: 'cmproxy.json',
     name: 'cmproxy',
     type: 'forward-proxy',
     version: '28cb5e41fd2e5b485f43be78e659235f4fe58c2d',
-    link: 'https://github.com/http-tests/cache-tests/wiki/Fastly'
+    link: ''
   }
 ]
