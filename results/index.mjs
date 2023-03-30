@@ -67,5 +67,12 @@ export default [
     type: 'cdn',
     version: '18-10-2021',
     link: 'https://github.com/http-tests/cache-tests/wiki/Fastly'
+  },
+  {
+    file: 'cmproxy.json',
+    name: 'cmproxy',
+    type: 'forward-proxy',
+    version: '28cb5e41fd2e5b485f43be78e659235f4fe58c2d',
+    link: 'https://github.com/http-tests/cache-tests/wiki/Fastly'
   }
 ]
