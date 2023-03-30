@@ -113,10 +113,7 @@
     "Request 3 should have been conditional, but it was not."
   ],
   "cc-resp-no-cache": true,
-  "cc-resp-no-cache-case-insensitive": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "cc-resp-no-cache-case-insensitive": true,
   "cc-resp-no-cache-revalidate": [
     "Assertion",
     "Request 2 should have been conditional, but it was not."
@@ -385,14 +382,8 @@
     "Response 2 does not come from cache"
   ],
   "freshness-max-age-age": true,
-  "freshness-max-age-case-insenstive": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
-  "freshness-max-age-date": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "freshness-max-age-case-insenstive": true,
+  "freshness-max-age-date": true,
   "freshness-max-age-decimal-five": [
     "Assertion",
     "Response 2 does not come from cache"
@@ -417,10 +408,7 @@
     "Response 2 does not come from cache"
   ],
   "freshness-max-age-s-maxage-shared-longer": true,
-  "freshness-max-age-s-maxage-shared-longer-multiple": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "freshness-max-age-s-maxage-shared-longer-multiple": true,
   "freshness-max-age-s-maxage-shared-longer-reversed": true,
   "freshness-max-age-s-maxage-shared-shorter": true,
   "freshness-max-age-s-maxage-shared-shorter-expires": [
@@ -434,17 +422,17 @@
     "Assertion",
     "Response 2 does not come from cache"
   ],
-  "freshness-max-age-two-fresh-stale-sepline": true,
-  "freshness-max-age-two-stale-fresh-sameline": true,
-  "freshness-max-age-two-stale-fresh-sepline": [
+  "freshness-max-age-two-fresh-stale-sepline": [
     "Assertion",
     "Response 2 does not come from cache"
   ],
+  "freshness-max-age-two-stale-fresh-sameline": true,
+  "freshness-max-age-two-stale-fresh-sepline": true,
   "freshness-none": true,
   "freshness-s-maxage-shared": true,
   "head-200-freshness-update": [
     "Setup",
-    "Response body is \"\", not \"b2af35b2-db0d-4444-9a6e-41ea725f5b70\""
+    "Response body is \"\", not \"ae3e8b12-10d7-43ff-a4c8-7d39e77a6839\""
   ],
   "head-200-retain": [
     "Assertion",
@@ -452,7 +440,7 @@
   ],
   "head-200-update": [
     "Setup",
-    "Response body is \"\", not \"7e9c7ebf-c905-48ff-ab41-7d1abb3cf49e\""
+    "Response body is \"\", not \"45c663e1-bc73-45f5-8020-84588baa4d55\""
   ],
   "head-410-update": [
     "Setup",
@@ -460,12 +448,12 @@
   ],
   "head-writethrough": true,
   "headers-omit-headers-listed-in-Cache-Control-no-cache": [
-    "Setup",
-    "Response 2 does not come from cache"
+    "Assertion",
+    "Response 2 includes unexpected header a: \"1\""
   ],
   "headers-omit-headers-listed-in-Cache-Control-no-cache-single": [
-    "Setup",
-    "Response 2 does not come from cache"
+    "Assertion",
+    "Response 2 includes unexpected header a: \"1\""
   ],
   "headers-omit-headers-listed-in-Connection": true,
   "headers-store-Cache-Control": true,
