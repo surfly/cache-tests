@@ -72,7 +72,7 @@ export default [
     file: 'cmproxy.json',
     name: 'cmproxy',
     type: 'forward-proxy',
-    version: '28cb5e41fd2e5b485f43be78e659235f4fe58c2d',
+    version: 'ff2d649f84a8391085f309fd857d62e14b3cf9f7',
     link: ''
   }
 ]
