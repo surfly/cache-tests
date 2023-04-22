@@ -277,10 +277,7 @@
   "conditional-etag-weak-respond-omit-slash": true,
   "conditional-lm-fresh": true,
   "conditional-lm-fresh-earlier": true,
-  "conditional-lm-fresh-no-lm": [
-    "Assertion",
-    "Response 2 status is 200, not 304"
-  ],
+  "conditional-lm-fresh-no-lm": true,
   "conditional-lm-fresh-rfc850": true,
   "conditional-lm-stale": true,
   "freshness-expires-32bit": true,
