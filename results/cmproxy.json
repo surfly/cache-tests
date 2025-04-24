@@ -408,7 +408,10 @@
   "headers-store-Cache-Control": true,
   "headers-store-Clear-Site-Data": true,
   "headers-store-Connection": true,
-  "headers-store-Content-Encoding": true,
+  "headers-store-Content-Encoding": [
+    "Assertion",
+    "Response 2 header Content-Encoding is \"null\", not \"apetixmbqfujync\""
+  ],
   "headers-store-Content-Foo": true,
   "headers-store-Content-Length": true,
   "headers-store-Content-Location": true,
