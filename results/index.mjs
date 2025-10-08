@@ -62,13 +62,6 @@ export default [
     link: 'https://github.com/http-tests/cache-tests/wiki/Fastly'
   },
   {
-    file: 'trafficserver.json',
-    name: 'ATS',
-    type: 'rev-proxy',
-    version: '9.2.0-1',
-    link: 'https://github.com/http-tests/cache-tests/wiki/Traffic-Server'
-  },
-  {
     file: 'cmproxy.json',
     name: 'cmproxy',
     type: 'forward-proxy',

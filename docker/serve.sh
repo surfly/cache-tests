@@ -6,9 +6,6 @@ squid -f /etc/squid/squid.conf -N &
 echo "* Starting nginx"
 /usr/sbin/nginx -g "daemon off;" &
 
-echo "* starting TrafficServer"
-/usr/bin/traffic_manager &
-
 echo "* Starting Apache"
 source /etc/apache2/envvars
 /usr/sbin/apache2 -X &

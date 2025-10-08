@@ -5,7 +5,7 @@
 PIDFILE=/tmp/http-cache-test-server.pid
 
 
-ALL_PROXIES=(squid nginx apache trafficserver varnish nuster)
+ALL_PROXIES=(squid nginx apache varnish nuster)
 DOCKER_PORTS=""
 for PORT in {8001..8005}; do
   DOCKER_PORTS+="-p ${PORT}:${PORT} "
@@ -60,9 +60,6 @@ function test_proxy {
       ;;
     nginx)
       PROXY_PORT=8002
-      ;;
-    trafficserver)
-      PROXY_PORT=8003
       ;;
     apache)
       PROXY_PORT=8004

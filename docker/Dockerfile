@@ -9,7 +9,6 @@ RUN apt-get update \
     nodejs npm git openssh-client \
     squid \
     nginx \
-    trafficserver \
     apache2 \
     varnish \
     && rm -rf /var/lib/apt/lists/* \
@@ -31,19 +30,6 @@ EXPOSE 8001
 RUN mkdir /var/cache/nginx
 COPY nginx/nginx.conf /etc/nginx/sites-enabled/cache-test.conf
 EXPOSE 8002
-
-
-# trafficserver
-
-COPY trafficserver/ip_allow.config /etc/trafficserver/ip_allow.config
-COPY trafficserver/records.config /etc/trafficserver/records.config
-COPY trafficserver/remap.config /etc/trafficserver/remap.config
-
-ENV TS_CACHE_DIR=/var/run/trafficserver
-ENV TS_LOG_DIR=/var/log/trafficserver
-ENV TS_USER=trafficserver
-EXPOSE 8003
-
 
 # apache
 
