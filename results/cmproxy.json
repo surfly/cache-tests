@@ -308,10 +308,22 @@
         "Assertion",
         "Response 2 does not come from cache"
     ],
-  "conditional-lm-fresh": true,
-  "conditional-lm-fresh-earlier": true,
-  "conditional-lm-fresh-no-lm": true,
-  "conditional-lm-fresh-rfc850": true,
+    "conditional-lm-fresh": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-lm-fresh-earlier": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-lm-fresh-no-lm": [
+        "Setup",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-lm-fresh-rfc850": [
+        "Setup",
+        "Response 2 does not come from cache"
+    ],
   "conditional-lm-stale": true,
   "freshness-expires-32bit": true,
   "freshness-expires-age-fast-date": true,
