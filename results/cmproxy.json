@@ -230,16 +230,22 @@
     "Response 2 comes from cache"
   ],
   "cdn-remove-header": true,
-  "conditional-304-etag": true,
+    "conditional-304-etag": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
   "conditional-etag-forward": true,
   "conditional-etag-forward-unquoted": [
     "Assertion",
     "Request 1 header If-None-Match is \"abcdef\", not \"\"abcdef\"\""
   ],
-  "conditional-etag-precedence": true,
+    "conditional-etag-precedence": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
   "conditional-etag-quoted-respond-unquoted": [
     "Assertion",
-    "Response 2 status is 200, not 304"
+        "Response 2 does not come from cache"
   ],
   "conditional-etag-strong-generate": [
     "Assertion",
@@ -249,19 +255,34 @@
     "Assertion",
     "Request 2 should have been conditional, but it was not."
   ],
-  "conditional-etag-strong-respond": true,
-  "conditional-etag-strong-respond-multiple-first": true,
-  "conditional-etag-strong-respond-multiple-last": true,
-  "conditional-etag-strong-respond-multiple-second": true,
+    "conditional-etag-strong-respond": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-etag-strong-respond-multiple-first": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-etag-strong-respond-multiple-last": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-etag-strong-respond-multiple-second": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
   "conditional-etag-strong-respond-obs-text": [
     "Assertion",
-    "Response 2 status is 200, not 304"
+        "Response 2 does not come from cache"
   ],
   "conditional-etag-unquoted-respond-quoted": [
     "Assertion",
-    "Response 2 status is 200, not 304"
+        "Response 2 does not come from cache"
   ],
-  "conditional-etag-unquoted-respond-unquoted": true,
+    "conditional-etag-unquoted-respond-unquoted": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
   "conditional-etag-vary-headers": [
     "Setup",
     "Request 2 should have been conditional, but it was not."
@@ -271,14 +292,38 @@
     "Assertion",
     "Request 2 should have been conditional, but it was not."
   ],
-  "conditional-etag-weak-respond": true,
-  "conditional-etag-weak-respond-backslash": true,
-  "conditional-etag-weak-respond-lowercase": true,
-  "conditional-etag-weak-respond-omit-slash": true,
-  "conditional-lm-fresh": true,
-  "conditional-lm-fresh-earlier": true,
-  "conditional-lm-fresh-no-lm": true,
-  "conditional-lm-fresh-rfc850": true,
+    "conditional-etag-weak-respond": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-etag-weak-respond-backslash": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-etag-weak-respond-lowercase": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-etag-weak-respond-omit-slash": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-lm-fresh": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-lm-fresh-earlier": [
+        "Assertion",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-lm-fresh-no-lm": [
+        "Setup",
+        "Response 2 does not come from cache"
+    ],
+    "conditional-lm-fresh-rfc850": [
+        "Setup",
+        "Response 2 does not come from cache"
+    ],
   "conditional-lm-stale": true,
   "freshness-expires-32bit": true,
   "freshness-expires-age-fast-date": true,
