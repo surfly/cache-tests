@@ -906,10 +906,7 @@
   "vary-omit-stored": true,
   "vary-star": true,
   "vary-syntax-empty-star": true,
-  "vary-syntax-empty-star-lines": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "vary-syntax-empty-star-lines": true,
   "vary-syntax-foo-star": true,
   "vary-syntax-star": true,
   "vary-syntax-star-foo": true,
